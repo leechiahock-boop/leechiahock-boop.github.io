@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+button.bg-contact {
+    background-color: rgb(249, 97, 43);
+    color: rgb(253, 244, 244);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    margin: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+}
+
+.menuitem {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .menuitem {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .contact {
+        display: none;
+    }
+}
