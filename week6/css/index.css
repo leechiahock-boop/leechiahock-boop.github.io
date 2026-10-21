@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    min-height: 500px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    padding: 60px
+}
+
+.banner-content {
+    width: 50%;
+}
+
+
+.subscribe-form {
+    display: inline-block;
+    background-color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.subscribe-button {
+    background-color: #f84646;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.email-input {
+    border: none;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background-position: center 50%;
+    }
+
+    .banner-content {
+        width: 60%
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        background-position: center 80%;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.request {
+    background-color: #f84646;
+    color:white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+.banner2 {
+    margin: auto;
+    text-align: center;
+}
+
+.sixlogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    width: calc(33.33% - 20px);
+}
+
+.sixlogo img {
+    filter: grayscale(100%);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.banner3 {
+    background-color: #f84646;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.text{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
