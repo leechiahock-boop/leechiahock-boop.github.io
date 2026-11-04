@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 8px;
+}
+
+.banner {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px
+    ;
+}
+ .chef{
+  font-size: 10px;  
+  margin:0;
+}   
+   
+.banner-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin:0;
+   }
+.Recommandation{
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+.banner2{
+    padding: 20px;
+    padding: 80px 30px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(180deg, transparent black);
+}
+.lobster{
+    background-image: url(../images/lobster.png);
+    background-size: cover;
+    background-position: center;
+    height: 513px;
+    width: 469px;
+}
+.cake{
+    background-image: url(../images/cake.png);
+    background-size: cover;
+    background-position: center;
+    height: 513px;
+    width: 469px;
+}
+.duck{
+    background-image: url(../images/duck.png);
+    background-size: cover;
+    background-position: center;
+    height: 513px;
+    width: 469px;
+}
+
+
