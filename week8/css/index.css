@@ -14,10 +14,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     align-items: center;
     display: flex;
 }
+
 .menu {
     display: flex;
     align-items: center;
@@ -32,23 +34,35 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px
-    ;
+    padding: 20px;
 }
- .chef{
-  font-size: 10px;  
-  margin:0;
-}   
-   
+
+.chef {
+    font-size: 10px;
+    margin: 0;
+}
+
 .banner-text {
     color: white;
     font-size: 25px;
     font-weight: bold;
-    margin:0;
-   }
-.Recommandation{
     margin: 0;
 }
+
+.Recommandation {
+    margin: 0;
+}
+
+@media (max-width: 2000px) {
+    .menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .menu {
         display: none;
@@ -58,35 +72,397 @@ body {
         display: block;
     }
 }
-.banner2{
-    padding: 20px;
-    padding: 80px 30px;
-    background-color: rgb(255, 255, 255);
+
+.banner2 {
+    background-color: white;
     color: white;
-    display: flex;
-    gap: 20px;
-    background: linear-gradient(180deg, transparent black);
+    padding: 20px 15px;
 }
-.lobster{
+
+.food {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0px;
+    font-size: 7px;
+    margin: 15px 0px;
+    gap: 15px;
+}
+
+.lobster {
     background-image: url(../images/lobster.png);
     background-size: cover;
     background-position: center;
-    height: 513px;
-    width: 469px;
+    height: 180px;
+    width: 200px;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+
 }
-.cake{
+
+.cake {
     background-image: url(../images/cake.png);
     background-size: cover;
     background-position: center;
-    height: 513px;
-    width: 469px;
+    height: 180px;
+    width: 200px;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+
 }
-.duck{
+
+.duck {
     background-image: url(../images/duck.png);
     background-size: cover;
     background-position: center;
-    height: 513px;
-    width: 469px;
+    height: 180px;
+    width: 200px;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+
+}
+
+.right {
+    text-align: right;
+    width: 100%;
+    color: white;
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    .banner2 {
+        padding: 20px 25px;
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        gap: 30px;
+    }
+
+    .lobster {
+        width: 100%;
+        height: 300px;
+        flex: none;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 10px;
+    }
+
+    .cake {
+        width: 100%;
+        height: 300px;
+        flex: none;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 10px;
+    }
+
+    .duck {
+        width: 100%;
+        height: 300px;
+        flex: none;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 10px;
+    }
+
+    .right {
+        text-align: right;
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+.main-course {
+    display: flex;
+    width: 100%;
+}
+
+.main-image {
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 470px;
+}
+
+.main-content {
+    width: 50%;
+    padding: 25px 40px;
+    background-color: white;
+    color: black;
+}
+
+.main-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    margin: 15px;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.menu-title p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.menu-item p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.dessert {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(../images/main2.png);
+
+    background-size: cover;
+    background-position: center;
+
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dessert h1 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    .main-course {
+        flex-direction: column;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .main-content h1 {
+        font-size: 30px;
+    }
+
+    .dessert {
+        height: 150px;
+    }
+
 }
 
 
+.dessert-list {
+    width: 90%;
+    margin: 55px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dessert-item {
+    width: 23.5%;
+}
+
+.dessert-item img {
+    width: 100%;
+    height: 350px;
+}
+
+.dessert-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dessert-title h3 {
+    font-size: 16px;
+    font-family: Impact, sans-serif;
+}
+
+.dessert-title p {
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .dessert-list {
+        width: 85%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .dessert-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dessert-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .dessert-item img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .dessert-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dessert-title h3 {
+        font-size: 13px;
+    }
+
+    .dessert-title p {
+        font-size: 11px;
+    }
+
+}
+
+.cocktail {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/background2.png);
+
+    background-size: cover;
+    background-position: center;
+
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+}
+
+.cocktail-content {
+    color: white;
+    width: 450px;
+}
+
+.cocktail-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 55px;
+    margin: 0;
+}
+
+.town {
+    font-size: 12px;
+}
+
+.line {
+    width: 55px;
+    height: 1px;
+    background-color: white;
+    margin: 55px 0 25px;
+}
+
+.cocktail-text {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.cocktail-content button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 14px 20px;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .cocktail {
+        height: 450px;
+        padding: 25px;
+    }
+
+    .cocktail-content {
+        width: 100%;
+    }
+
+    .cocktail-content h1 {
+        font-size: 35px;
+    }
+
+    .cocktail-text {
+        font-size: 12px;
+    }
+
+}
+
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle\ 9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
+}
