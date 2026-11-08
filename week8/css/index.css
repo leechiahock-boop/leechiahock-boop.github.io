@@ -25,6 +25,7 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 8px;
+    padding: 0;
 }
 
 .banner {
