@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+
+}
+
+.menu {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    gap: 30px;
+    right: 230px;
+    position: absolute;
+    font-size: 15px;
+    align-items: center;
+}
+
+.banner {
+    background-color: black;
+    display: flex;
+    background: cover;
+
+}
+
+.left {
+    flex :1;
+    height: auto;
+    background: cover;
+}
+
+.right {
+    color: white;
+    padding: 100px;
+
+}
+
+.text {
+    font-size: 15px;
+}
+
+.text2 {
+    font-size: 80px;
+}
+
+.text3 {
+    font-size: 18px;
+}
+
+.button {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner2 {
+    padding: 0px;
+    text-align: center;
+}
+
+.banner2-text1 {
+    font-size: 19px;
+
+}
+.food{
+    display: flex;
+    align-items: center;
+    gap: 80px; 
+    position: relative;
+    left: 140px;
+
+}

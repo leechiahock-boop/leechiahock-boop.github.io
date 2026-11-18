@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.romaliya {
+    font-size: 40px;
+    position: relative;
+    right: -20px;
+
+}
+
+.logo {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    align-items: center;
+    position: absolute;
+    top: 26px;
+    left: 146px;
+    gap: 10px;
+    height: 60px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 30px;
+    top: 45px;
+    right: 230px;
+    position: absolute;
+
+}
+
+
+.banner {
+    background-image: url(../images/Rectangle\ 79.png), url(../images/background.png);
+    background-size: cover;
+    padding: 200px;
+    width: 100%;
+    height: 900px;
+
+}
+
+.banner-content {
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 300px;
+    font-size: 17px;
+    left: 30px;
+    color:white
+}
+
+.line {
+    width: 65px;
+    height: 1px;
+    background-color: white;
+}
+
+.order-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    top: 250px;
+    position: relative;
+    left: 15px;
+
+}
+
+.banner2 {
+    padding: 50px;
+}
+
+.text {
+    display: flex;
+    align-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 28px;
+    position: relative;
+    right: -80px;
+
+}
+
+.text2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin: 25px;
+    position: relative;
+    right: -80px;
+
+
+}
+
+.text3 {
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    position: relative;
+    right: -75px;
+
+
+}
+
+.button {
+    cursor: pointer;
+    width: 187px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    left: 1000px;
+    top: -90px;
+    position: relative;
+}
+
+.menu-section {
+    background-color: black;
+    color: white;
+    padding: 100px 20px;
+}
+
+.category-title {
+    font-family: Arial;
+    font-size: 10px;
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto 15px;
+}
+
+.menu-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 25px;
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.menu-card {
+    width: calc(50% - 12.5px);
+    background-color: #333333;
+    color: white;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 550px;
+    display: block;
+}
+
+.menu-info {
+    padding: 30px;
+}
+
+.category {
+    font-family: Arial;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.food-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.food-description {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.food-price {
+    font-family: Arial;
+    font-size: 12px;
+    color: #c9a66b;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-form {
+    display: flex;
+    gap: 0;
+}
+
+.value-button {
+    width: 42px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity {
+    width: 42px;
+    height: 32px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #777777;
+}
+
+.add-cart {
+    width: 120px;
+    height: 32px;
+    background-color: #c9a66b;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.view-cart {
+    width: 100px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-section {
+        padding: 50px 20px;
+    }
+
+    .category-title {
+        width: 100%;
+    }
+
+    .menu-title {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+
+    .menu-card img {
+        height: 300px;
+    }
+
+    .menu-info {
+        padding: 20px;
+    }
+
+    .menu-button {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.featured-section {
+    background-color: white;
+    padding: 60px 8%;
+}
+
+.featured-card {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    background-color: black;
+}
+
+.featured-card img {
+    width: 45%;
+    height: 497px;
+    display: block;
+}
+
+.featured-info {
+    width: 55%;
+    padding: 80px 8%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-category {
+    font-family: Arial;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.featured-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.featured-description {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.featured-button {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.featured-button .quantity-form {
+    display: flex;
+    gap: 0;
+}
+
+.featured-button .value-button {
+    width: 44px;
+    height: 45px;
+    background-color: black;
+    border: 1px solid #777777;
+    color: white;
+    cursor: pointer;
+}
+
+.featured-button .quantity {
+    width: 44px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: 1px solid #777777;
+    text-align: center;
+}
+
+.featured-add-cart {
+    width: 180px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .featured-section {
+        padding: 40px 20px;
+    }
+
+    .featured-card {
+        flex-direction: column;
+    }
+
+    .featured-card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .featured-info {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .featured-title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .featured-button {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+}
+.favorites-section {
+    background-color: black;
+    color: white;
+    padding: 80px 20px;
+}
+
+.favorites-heading {
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+}
+
+.favorites-category {
+    font-family: Arial;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.favorites-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.favorites-list {
+    display: flex;
+    gap: 18px;
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.favorite-card {
+    width: calc(33.333% - 12px);
+    background-color: #333333;
+    color: white;
+}
+
+.favorite-card img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.favorite-info {
+    padding: 25px;
+}
+
+.favorite-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.favorite-description {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.favorite-price {
+    font-family: Arial;
+    font-size: 12px;
+    color: #c9a66b;
+    margin-bottom: 12px;
+}
+
+.favorite-info .quantity-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.favorite-info .value-button {
+    width: 22%;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    color: white;
+    cursor: pointer;
+}
+
+.favorite-info .quantity {
+    width: 56%;
+    height: 38px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #777777;
+}
+
+.favorite-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.favorite-add-cart {
+    width: 100%;
+    height: 38px;
+    background-color: #c9a66b;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.favorite-view-cart {
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .favorites-section {
+        padding: 50px 20px;
+    }
+
+    .favorites-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .favorite-card {
+        width: 100%;
+    }
+
+    .favorite-card img {
+        height: 250px;
+    }
+
+}
+.review-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.review-category {
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.review-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.review-description {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.review-button {
+    width: 257px;
+    height: 53px;
+    background-color: #c9a66b;
+    border: none;
+    color: white;
+    font-family: Arial;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .review-section {
+        padding: 70px 20px;
+    }
+
+    .review-title {
+        font-size: 25px;
+    }
+
+    .review-description {
+        font-size: 16px;
+    }
+
+    .review-button {
+        width: 230px;
+    }
+
+}
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+
+}

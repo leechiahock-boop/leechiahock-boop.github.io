@@ -144,6 +144,10 @@ body {
 .chef {
     width: 30%;
     text-align: center;
+    
+}
+.button{
+    cursor:pointer;
 }
 
 .chef img {
