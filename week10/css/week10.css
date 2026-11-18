@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -7,10 +8,10 @@ body {
 }
 
 .header {
-    padding: 10px;
+    padding: 20px;
     background-color: black;
     display: flex;
-    padding: 20px;
+    position: relative;
 }
 
 .logo {
@@ -22,7 +23,6 @@ body {
     left: 100px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
-
 }
 
 .menu {
@@ -31,28 +31,52 @@ body {
     font-size: 15px;
     gap: 30px;
     right: 230px;
+    top: 30px;
     position: absolute;
-    font-size: 15px;
     align-items: center;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 180px;
+    top: 27px;
+}
+
+.hamburger {
+    display: block;
 }
 
 .banner {
     background-color: black;
     display: flex;
-    background: cover;
-
+    width: 100%;
+    align-items: stretch;
 }
 
 .left {
-    flex :1;
-    height: auto;
-    background: cover;
+    width: 50%;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .right {
+    width: 50%;
     color: white;
-    padding: 100px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.conten {
+    width: 100%;
 }
 
 .text {
@@ -60,6 +84,7 @@ body {
 }
 
 .text2 {
+    display: block;
     font-size: 80px;
 }
 
@@ -67,14 +92,19 @@ body {
     font-size: 18px;
 }
 
+.text4 {
+    font-size: 22px;
+}
+
 .button {
     background-color: black;
-    color: rgb(255, 255, 255);
+    color: white;
     border: 1px solid white;
     padding: 10px 20px;
     margin: 7px;
     font-size: 12px;
     cursor: pointer;
+    width: 150px;
 }
 
 .banner2 {
@@ -82,15 +112,704 @@ body {
     text-align: center;
 }
 
-.banner2-text1 {
-    font-size: 19px;
-
+.banner2-text {
+    text-align: center;
 }
-.food{
+
+.banner2-text1 {
+    font-family: 'Lora', serif;
+    font-size: 46px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 55.2px;
+    margin-bottom: 15px;
+}
+
+.banner2-text2 {
+    display: block;
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner2-text3 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.food {
     display: flex;
     align-items: center;
-    gap: 80px; 
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner3 {
+    height: 500px;
+    background: url(../images/background4.jpg);
+    background-size: cover;
+}
+
+.banner3-text {
+    color: white;
+    text-align: center;
+    padding: 120px;
+}
+
+.banner3-text1 {
     position: relative;
-    left: 140px;
+    top: 30px;
+}
+
+.banner3-text2 {
+    font-size: 40px;
+}
+
+.promotion {
+    width: 100%;
+    padding: 80px 0;
+    background-color: white;
+}
+
+.promotion-content {
+    width: 1000px;
+    margin: auto;
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.promo-item img {
+    width: 55%;
+    height: auto;
+}
+
+.promo-text {
+    width: 40%;
+    text-align: center;
+}
+
+.promo-text h3 {
+    font-size: 16px;
+}
+
+.promo1 {
+    z-index: 3;
+}
+
+.promo2 {
+    flex-direction: row;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.promo3 {
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.limited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.limited p {
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.line {
+    width: 27px;
+    height: 1px;
+    background-color: black;
+}
+
+.reserve {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.reserve button {
+    padding: 12px 35px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.membership {
+    width: 100%;
+    background-color: white;
+}
+
+.membership-banner {
+    background-image: url(../images/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.membership-banner h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.membership-banner p {
+    width: 60%;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.membership-list {
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.membership-card {
+    width: 33.33%;
+    height: 436px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classic {
+    background-image: url(../images/card0.png), url(../images/card1.png);
+}
+
+.prestige {
+    background-image: url(../images/card0.png), url(../images/card2.png);
+}
+
+.elite {
+    background-image: url(../images/card0.png), url(../images/card3.png);
+}
+
+.membership-card h4 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.benefits {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.benefits p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.membership-card button {
+    width: 60%;
+    padding: 8px;
+    margin-top: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.header4 {
+    min-height: 480px;
+    background-image: url(../images/Rectangle9.png), url(../images/Environment.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo4 {
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+@media(max-width: 1536px){
+    .hamburger{
+        display: none;
+    }
+
+}
+@media (max-width: 1024px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icons {
+        right: 30px;
+        top: 25px;
+    }
+
+    .order {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+  
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+        flex: none;
+    }
+
+    .glass {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+        padding: 50px 60px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .conten {
+        width: 100%;
+    }
+
+    .text2 {
+        font-size: 55px;
+    }
+
+    .text3 {
+        font-size: 15px;
+    }
+
+    .button {
+        align-self: center;
+    }
+
+    .banner2 {
+        padding: 30px 20px;
+    }
+
+    .banner2-text1 {
+        font-size: 40px;
+    }
+
+    .banner2-text2 {
+        font-size: 35px;
+    }
+
+    .banner2-text3 {
+        font-size: 14px;
+    }
+
+    .food {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 70px;
+    }
+
+    .beef,
+    .lychee {
+        width: 80%;
+        text-align: center;
+    }
+
+    .beef img,
+    .lychee img {
+        width: 225px;
+        height: 300px;
+    }
+
+    .banner3 {
+        height: 400px;
+    }
+
+    .banner3-text {
+        padding: 90px 40px;
+    }
+
+    .banner3-text2 {
+        font-size: 35px;
+    }
+
+    .promotion {
+        padding: 50px 0;
+    }
+
+    .promotion-content {
+        width: 80%;
+    }
+
+    .promo-item {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .promo2 {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .promo3 {
+        margin-top: 40px;
+    }
+
+    .promo-item img {
+        width: 75%;
+    }
+
+    .promo-text {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .limited {
+        gap: 15px;
+    }
+
+    .limited p {
+        font-size: 13px;
+    }
+
+    .membership-banner {
+        height: 380px;
+    }
+
+    .membership-banner h1 {
+        font-size: 35px;
+    }
+
+    .membership-banner p {
+        width: 80%;
+    }
+
+    .membership-list {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .membership-card {
+        width: 45%;
+        height: 436px;
+    }
+
+    .header4 {
+        min-height: 400px;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .header {
+        padding: 15px;
+        position: relative;
+    }
+
+    .logo {
+        left: 0;
+        font-size: 18px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icons {
+        right: 20px;
+        top: 20px;
+    }
+
+    .order {
+        display: none;
+    }
+
+    .hamburger-img {
+        display: block;
+        width: 25px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+        flex: none;
+    }
+
+    .glass {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+        padding: 35px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .conten {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .text2 {
+        font-size: 35px;
+    }
+
+    .text3 {
+        font-size: 13px;
+    }
+
+    .text3 br {
+        display: none;
+    }
+
+    .text4 {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 11px;
+        align-self: center;
+    }
+
+    .banner2 {
+        padding: 25px 15px;
+    }
+
+    .banner2-text1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .banner2-text2 {
+        font-size: 28px;
+    }
+
+    .banner2-text3 {
+        font-size: 12px;
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .beef,
+    .lychee {
+        width: 90%;
+        text-align: center;
+    }
+
+    .beef img,
+    .lychee img {
+        width: 225px;
+        height: 300px;
+    }
+
+    .beef h1,
+    .lychee h1 {
+        font-size: 16px;
+    }
+
+    .beef h2,
+    .lychee h2 {
+        font-size: 13px;
+    }
+
+    .banner3 {
+        height: 350px;
+    }
+
+    .banner3-text {
+        padding: 65px 20px;
+    }
+
+    .banner3-text1 {
+        font-size: 13px;
+    }
+
+    .banner3-text2 {
+        font-size: 27px;
+    }
+
+    .banner3-text p2 {
+        font-size: 12px;
+    }
+
+    .promotion {
+        padding: 35px 0;
+    }
+
+    .promotion-content {
+        width: 90%;
+    }
+
+    .promo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+    }
+
+    .promo2 {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .promo3 {
+        margin-top: 35px;
+    }
+
+    .promo-item img {
+        width: 100%;
+    }
+
+    .promo-text {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    .promo-text h3 {
+        font-size: 13px;
+    }
+
+    .limited {
+        gap: 8px;
+        margin-top: 30px;
+    }
+
+    .limited p {
+        font-size: 9px;
+    }
+
+    .line {
+        width: 15px;
+    }
+
+    .reserve {
+        margin-top: 20px;
+    }
+
+    .membership-banner {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .membership-banner h1 {
+        font-size: 26px;
+    }
+
+    .membership-banner p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .membership-list {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .membership-card {
+        width: 100%;
+        height: 420px;
+        padding: 25px 15px;
+    }
+
+    .membership-card h3 {
+        font-size: 17px;
+    }
+
+    .benefits p {
+        font-size: 13px;
+    }
+
+    .header4 {
+        min-height: 300px;
+    }
+
+    .last {
+        font-size: 15px;
+    }
+
+    .logo4 {
+        gap: 10px;
+    }
 
 }
